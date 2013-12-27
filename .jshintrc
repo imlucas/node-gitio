@@ -1,0 +1,22 @@
+{
+    "node": true,
+    "es5": true,
+    "boss": true,
+    "curly": false,
+    "eqeqeq": true,
+    "noarg": true,
+    "newcap": true,
+    "noempty": true,
+    "onevar": true,
+    "plusplus": false,
+    "trailing": true,
+    "indent": 2,
+    "predef": [
+        "describe",
+        "it",
+        "before",
+        "beforeEach",
+        "after",
+        "afterEach"
+    ]
+}
