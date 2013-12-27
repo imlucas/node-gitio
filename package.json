@@ -2,7 +2,13 @@
   "name": "gitio2",
   "version": "2.0.0",
   "author": "Felix Saparelli <me@passcod.name>",
-  "contributors": {"Tane Piper": "piper.tane@gmail.com"},
+  "contributors": {
+    "Tane Piper": "piper.tane@gmail.com",
+    "Lucas Hrabovsky": "hrabovsky.lucas@gmail.com"
+  },
+  "bin": {
+    "gitio": "./gitio"
+  },
   "description": "Wrapper around the git.io URL shortener",
   "main": "./index",
   "repository": {
@@ -16,6 +22,8 @@
     "node >= 0.6.0"
   ],
   "dependencies": {
-    "request": "2.22.x"
-  }
+    "request": "~2.30.0",
+    "optimist": "~0.6.0"
+  },
+  "license": "MIT"
 }

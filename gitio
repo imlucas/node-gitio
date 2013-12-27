@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+"use strict";
+
+var gitio = require('./index'),
+    program = require('optimist')
+        .usage('Shorten URLs like the cool kids\ngitio [url] [optional code]')
+        .wrap(80)
+        .demand(1),
+    argv = program.argv,
+    url = argv._[0],
+    code = argv._[1];
+
+gitio(url, code, function(err, url){
+    if(err){
+        console.error('** Error:', err.message);
+        console.error();
+        console.error(program.help());
+        return;
+    }
+    console.log(url);
+});
